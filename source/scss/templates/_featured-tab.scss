@@ -1,0 +1,53 @@
+/* Featuted Tab
+================================================== */
+
+.news-style-two {
+  position: relative;
+  .nav-tabs {
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    > li > a {
+      color: #999999;
+      text-shadow: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      border-radius: 0;
+      margin: 0 1px 0;
+      padding: 0 0 0 15px;
+      border: 0 !important;
+      -moz-transition: all 300ms ease;
+      -webkit-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
+    }
+  }
+  .tab-content {
+    border-top: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .nav-tabs > li.active > a {
+    color: #1c1c1c;
+    position: relative;
+    background: none;
+    &:after {
+      position: absolute;
+      content: " ";
+      width: auto;
+      height: auto;
+      bottom: -14px;
+      margin-left: 0;
+      left: 50%;
+      border-width: 7px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #1c1c1c rgba(0, 0, 0, 0);
+    }
+  }
+  .post-list-block {
+    margin-top: 0;
+  }
+}

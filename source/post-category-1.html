@@ -1,0 +1,36 @@
+@@include('header.htm')
+
+@@include('blocks/top-nav.htm')
+
+@@include('blocks/trending-bar-dark.htm')
+
+@@include('blocks/navigation.htm')
+
+@@include('blocks/breadcrumb.htm', {
+	"title"	: "Lifestyle"
+})
+
+<section class="block-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+				<div class="block category-listing">
+					<h3 class="news-title"><span>Lifestyle</span></h3>
+				</div>
+				@@include('blocks/post-style-five.htm')
+				@@include('blocks/pagination.htm')
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+				<div class="sidebar sidebar-right">
+					@@include('blocks/widget-social-share.htm')
+					@@include('blocks/widget-sidebar-ads.htm')
+					@@include('blocks/widget-popular-post.htm')
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

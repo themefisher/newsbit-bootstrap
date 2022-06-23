@@ -1,0 +1,34 @@
+/* 10. CONTACT
+================================================== */
+
+.contact-info-box {
+  margin-top: 20px;
+}
+
+.contact-info-box-content {
+  h4 {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: normal;
+    font-weight: 700;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+label {
+  font-weight: 400;
+}
+
+.form-group{
+  margin-bottom: 1.5rem;
+}
+
+.lh-45{
+  line-height: 45px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: auto!important;
+}

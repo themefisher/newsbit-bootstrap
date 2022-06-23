@@ -1,0 +1,65 @@
+/* 3. TRANDING NEWS
+================================================== */
+
+.trending-bar-dark {
+  background: $trending-dark-bg;
+  color: $white;
+  padding: 10px 0;
+}
+
+.trending-bar-title {
+  background: $primary-color;
+  color: $white;
+  display: inline-block;
+  font-size: 11px;
+  padding: 5px 10px;
+  line-height: 100%;
+  text-transform: uppercase;
+  float: left;
+  margin: 0 20px 0 0;
+  @include radius(2px);
+}
+
+.trending-bar-dark .post-content, .trending-light .post-content {
+  padding: 0;
+}
+
+.trending-news-slider .post-title {
+  a {
+    color: $white;
+    font-weight: $font-weight-bold;
+  }
+  &.title-sm {
+    font-weight: 400;
+    margin: 0;
+    font-size:12px;
+    line-height: 20px;
+  }
+}
+
+.trending-news-slider{
+  .slick-prev:before, .slick-next:before{
+    font-family: FontAwesome;
+    font-size: 13px;
+    color: $white;
+    opacity: 1;
+  }
+  .slick-next:before{
+    content: "\f105";
+  }
+  .slick-prev:before{
+    content: "\f104";
+  }
+  .slick-next{
+    border-radius: 2px;
+    right: 0;
+    background: $primary-color;
+  }
+  .slick-prev{
+    background: $primary-color;
+    border-radius: 2px;
+    left: unset;
+    right: 30px;
+    z-index: 3;
+  }
+}

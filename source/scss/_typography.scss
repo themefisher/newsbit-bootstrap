@@ -1,0 +1,47 @@
+/* 1.1. Typography
+================================================== */
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,700|Libre+Franklin:400,600,700|Poppins:400,600,700,800');
+
+body,p{
+	font-family: $secondary-font;
+	line-height: 26px;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	color: #666;
+	font-weight: 400;
+}
+
+
+h1,.h1, h2,.h2, h3, .h3, h4,.h4, h5,.h5, h6,.h6{
+	color: #1c1c1c;
+	font-weight: 700;
+	font-family: $primary-font;
+	letter-spacing: -0.03em;
+}
+
+h1,.h1{
+	font-size: 36px;
+	line-height: 48px;
+}
+
+h2,.h2{
+	font-size: 28px;
+	line-height: 36px;
+}
+
+h3,.h3{
+	font-size: 24px;
+}
+
+h4,.h4{
+	font-size: 18px;
+	line-height: 28px;
+}
+
+h5,.h5{
+	font-size: 14px;
+	line-height: 24px;
+}
+

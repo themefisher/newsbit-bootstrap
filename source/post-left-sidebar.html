@@ -1,0 +1,37 @@
+@@include('header.htm')
+
+@@include('blocks/top-nav.htm')
+
+@@include('blocks/trending-bar-dark.htm')
+
+@@include('blocks/navigation.htm')
+
+@@include('blocks/breadcrumb.htm',{
+	"title"	:	"Left Sidebar"
+})
+
+<section class="block-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
+				<div class="sidebar sidebar-left">
+					@@include('blocks/widget-social-share.htm') 
+					@@include('blocks/widget-popular-post.htm') 
+					@@include('blocks/widget-sidebar-ads.htm')
+					@@include('blocks/widget-newsletter.htm')
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+				@@include('blocks/single-post.htm')
+				@@include('blocks/post-nav.htm')
+				@@include('blocks/author.htm')
+				@@include('blocks/related-posts.htm')
+				@@include('blocks/comments.htm')
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

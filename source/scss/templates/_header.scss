@@ -1,0 +1,247 @@
+/* 2. HEADER
+================================================== */
+
+// 2.1 Navigation
+.navigation {
+  padding: 10px 0;
+}
+.header-navigation {
+  padding: 10px 0;
+  background: $white;
+}
+
+.logo {
+  padding: 28px 0;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+}
+.navbar-toggler {
+  padding:8px;
+  &:focus {
+    outline:none;
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    .active.nav-link:before {
+      opacity: 1;
+    }
+    
+    .nav-link {
+      padding-right: 25px;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $white;
+      margin: 0;
+      position: relative;
+      transition: 350ms;
+      @include tablet {
+        // display:none;
+        display:block;
+        
+      }
+      @include mobile {
+        display:block;
+      }
+      @include desktop {
+        display:block;
+        padding:10px 0;
+        
+      }
+     
+      &:hover:before, &.active &:before {
+        opacity: 1;
+      }
+      
+    }
+  }
+}
+
+.main-navbar {
+  position: relative;
+  border-bottom: 3px solid $primary-color;
+  // box-shadow: 0px 5px 8px 0px rgba($color: $black, $alpha: 0.1);
+  .dropdown {
+    &:hover .dropdown-menu {
+      transform: scaleY(1);
+      opacity: 1;
+      display:block;
+      visibility:visible;
+    }
+  }
+  .dropdown-menu {
+    text-align: left;
+    background: #fff;
+    z-index: 999;
+    min-width: 230px;
+    border-radius: 0;
+    border: 0;
+    margin:0;
+    display: block;
+    transform: scaleY(0);
+    opacity: 0;
+    visibility:hidden;
+    transform-origin: top;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0px 5px 8px 0px rgba($color: $black, $alpha: 0.1);
+    @include tablet {
+      display:none;
+
+    }
+    @include mobile {
+      display:none;
+    }
+    @include desktop {
+      display:none;
+    }
+    .dropdown-item {
+        display: block;
+        font-size: 14px;
+        padding: 8px 15px;
+        border-bottom: 1px solid #e5e5e5;
+        color: $text-color-dark;
+        font-family: $primary-font;
+        transition: all .3s ease;
+        &:last-child {
+          border:none;
+        }
+        &:hover {
+          background:$primary-color;
+          color:$white;
+      }
+    }
+    
+  }
+}
+
+// 2.2. Site Search 
+.site-search {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    top: 0;
+    input{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 0 3%;
+      border: 0;
+      background-color: #fff;
+      color: $primary-color;
+      font-size: 17px;
+      font-family: $primary-font;
+      &:focus{
+        outline: 0;
+        box-shadow: none;
+        border: none;
+      }
+    }
+    .search-close {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        right: 3%;
+        cursor: pointer;
+    }
+}
+
+.site-search.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.nav-search {
+  span {
+    display:inline-block;
+    cursor:pointer;
+    padding:10px;
+    font-size:18px;
+  }
+}
+.close-search {
+  font-size:20px;
+}
+
+// 2.3. Top Navigation
+.top-navigation {
+  padding: 8px 0;
+  border-bottom: 1px solid #dedede;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+
+
+
+
+.top-nav {
+  display: inline-block;
+  li {
+    display: inline-block;
+    line-height: 12px;
+    padding-left: 12px;
+    a {
+      background: none;
+      color: #a3a3a3;
+      padding: 0;
+      line-height: 100%;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.top-nav-social-lists {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -3px;
+  }
+  li {
+    display: inline-block;
+    padding: 0;
+    a {
+      color: #a3a3a3;
+      margin-right: 15px;
+      font-size: 14px;
+      -webkit-transition: 400ms;
+      -moz-transition: 400ms;
+      -o-transition: 400ms;
+      transition: 400ms;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.bg-dark{
+  background: $black!important;
+}
+
+
+.dropdown-menu{
+  padding: 0px;
+}
+
+
+.navbar-toggler{
+  span{
+    color: $white;
+  }
+}

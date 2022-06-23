@@ -1,0 +1,55 @@
+/* 7. POST CATEGORY STYLES
+================================================== */
+
+.category-listing .post-block-wrapper .post-content {
+  p {
+    font-size: 14px;
+  }
+  
+}
+
+.subCategory > li {
+  display: inline-block;
+  margin-bottom: 30px;
+  > a {
+    border: 1px solid #dedede;
+    padding: 2px 6px;
+    margin-right: 6px;
+    color: #515151;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    &:hover {
+      background: $primary-color;
+      color: $white;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+/* Post grid */
+
+.post-grid {
+  margin-bottom: 15px;
+  min-height: 455px;
+}
+
+/* Post list */
+
+.post-list {
+  margin-bottom: 40px;
+}
+
+/* Top large post */
+
+.top-larget-post {
+  margin-bottom: 30px;
+  .post-title.title-large {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.category-style2 .post-title {
+  margin-top: 0;
+}

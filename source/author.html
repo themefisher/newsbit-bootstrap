@@ -1,0 +1,33 @@
+@@include('header.htm')
+
+@@include('blocks/top-nav.htm')
+
+@@include('blocks/trending-bar-dark.htm')
+
+@@include('blocks/navigation.htm')
+
+<section class="block-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				@@include('blocks/author.htm')
+				<div class="block category-listing">
+					@@include('blocks/post-style-five.htm')
+				</div>
+				@@include('blocks/pagination.htm')
+			</div><!-- Content Col end -->
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="sidebar sidebar-right">
+					@@include('blocks/widget-social-share.htm')
+					@@include('blocks/widget-sidebar-ads.htm')
+					@@include('blocks/widget-review.htm')
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

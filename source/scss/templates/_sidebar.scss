@@ -1,0 +1,175 @@
+/* 8. SIDEBAR
+================================================== */
+
+.sidebar .widget.mb-0 {
+  margin-bottom: 0;
+}
+
+// 8.1. Social Pages
+.social-widget{
+   a{
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    i{
+      color: $white;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    
+  }
+  
+  .facebook{
+        background: #516eab;
+    }
+  .twitter{
+      background: #29c5f6;
+  }
+  .youtube{
+      background: #e14e42;
+  }
+  .pinterest{
+      background: #C92228;
+  }
+  .linkedin{
+      background: #3f729b;
+  }
+ .youtube{
+      background: #C92228;
+  }
+
+
+}
+
+// 8.2. Sidebar Widget Common Styles
+.sidebar .widget {
+  margin-bottom: 50px;
+  @include desktop{
+    margin: 25px 0;
+  }
+}
+
+.sidebar-left .widget {
+  margin-right: 20px;
+}
+
+.sidebar-right .widget {
+  margin-left: 20px;
+}
+
+// 8.3. Sidebar Nav
+.sidebar ul.nav-tabs {
+  border: 0;
+  li {
+    a {
+      color: #303030;
+      border-radius: 0;
+      padding: 15px 0;
+      padding-left: 0;
+      font-weight: 400;
+      border-bottom: 1px solid #ddd;
+      -webkit-transition: 400ms;
+      -moz-transition: 400ms;
+      -o-transition: 400ms;
+      transition: 400ms;
+    }
+    &.active a, &:hover a {
+      color: $primary-color;
+    }
+    color: #303030;
+    line-height: normal;
+    &:last-child a {
+      border-bottom: 0;
+    }
+  }
+}
+
+// 8.4. Newsletter
+.newsletter-text{
+  font-size: 16px;
+  font-family: $primary-font;
+}
+
+.newsletter-form button {
+  margin-top: 15px;
+}
+
+// 8.5. Tags
+.widget-tags ul > li {
+  float: left;
+  margin: 3px;
+}
+
+.sidebar .widget-tags ul > li a {
+  border: 1px solid #dadada;
+  color: #303030;
+  display: block;
+  font-size: 14px;
+  padding: 3px 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+    border: 1px solid transparent;
+  }
+}
+
+// 8.6. Review Post
+.post-block-wrapper.post-float.review-post-block {
+  max-width: 140px;
+  min-height: 105px;
+  .post-thumbnail img {
+    max-width: 140px;
+    min-height: 105px;
+  }
+}
+
+
+.block-wrapper {
+  &.no-sidebar {
+    max-width: 850px;
+    margin: 0 auto;
+    > .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+  }
+  &.solid-bg {
+    background: #f7f7f7;
+    background: rgba(247, 247, 247, 1);
+  }
+}
+
+.solid-bg {
+  .pr-2 {
+    padding-right: 4px;
+  }
+  .pl-2 {
+    padding-left: 4px;
+  }
+}
+
+// 8.7. Top Authors
+.top-author{
+  display: flex;
+  margin-bottom: 38px;
+  .info{
+    margin-left: 20px;
+    h4{
+      margin: 0;
+      a{
+        color: $text-color;
+      }
+    }
+    li{
+      font-family: $primary-font;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.job-item{
+	p{
+		margin-bottom: 0px;
+	}
+}
+
+
+.info-list{
+	li{
+		margin-bottom: 15px;
+	}
+}
+
+.signup {
+    border: 2px solid #eee;
+    padding: 40px;
+}
+.login {
+    border: 2px solid #eee;
+    padding: 40px;
+}
+
+
+
+
+/* Error page
+================================================== */
+
+.error-block {
+    padding: 50px;
+    text-align: center;
+
+  .throw-code h2 {
+    display: block;
+    font-size: 170px;
+    line-height: 170px;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+  a{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+  }
+}
+
+
+.broken-img{
+  text-align: center;
+  border-radius: 10px
+}
+.mt-50{
+  margin-top: 50px;
+}
+
+
+@include mobile{
+  .error-block .throw-code h2 {
+    font-size: 100px;
+    line-height: 115px;
+  }
+}
+@include mobile-xs{
+  .error-block .throw-code h2 {
+    font-size: 100px;
+    line-height: 115px;
+  }
+}
+
+@include tablet{
+  .error-block .throw-code h2 {
+    font-size: 100px;
+    line-height: 115px;
+  }
+}
+
+
+.search-info{
+  i{
+    width: 90px;
+    height: 90px;
+    background: $bg-secondary;
+    border-radius: 100%;
+    font-size: 22px;
+    padding-top: 35px;
+  }
+}
+
+
+///
+.job-item{
+  h4{
+    flex-basis: 40%;
+  }
+}
+
+// Login signup 
+// 
+.login-signup {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,383 @@
+/* 5. POST SINGLE STYLES
+================================================== */
+
+.single-block-wrapper{
+  background: $white;
+}
+
+// 5.1. Single Post Title
+.single-post {
+  .post-title {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 15px 0 8px 0;
+    margin: 0;
+    font-weight: 800;
+  }
+  p {
+    margin-bottom: 15px;
+    color: $black;
+  }
+}
+
+.post-body {
+  margin: 20px 0;
+}
+
+// 5.2. Feature Image
+.post-featured-image {
+  margin-bottom: 30px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+// 5.3. Post Ads
+.post-ad-holder{
+  margin: 20px 0;
+  @include tablet {
+    flex-direction: column;
+  }
+  img{
+    margin-right: 30px;
+    @include tablet {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  p{
+    @include tablet {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.post-media {
+  &.post-video, &.post-audio {
+    margin-bottom: 30px;
+  }
+}
+
+.entry-content h3 {
+  margin: 0;
+  padding: 20px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+// 5.4. Post Tag
+.tags-source {
+  margin: 20px 0;
+}
+
+.post-source, .post-tags {
+  span {
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  a {
+    border-radius: 2px;
+    display: inline;
+    list-style: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: $text-color;
+    background: $bg-secondary;
+    transition: all .3s ease-in-out;
+    &:hover {
+      background: $primary-color;
+      color: $white;
+      border-color: $primary-color;
+    }
+  }
+}
+
+// 5.5. Post Share Widget
+.share-block {
+  padding: 20px 0px;
+  margin: 25px 0px 55px 0px;
+}
+
+.share-icons {
+
+  margin-bottom: 0px;
+  > li {
+    display: inline-block;
+    &:not(:last-child){
+      margin-right: 8px;
+    }
+  }
+  a {
+    text-align: center;
+    height: 38px;
+    color: $black;
+    background: $bg-secondary;
+    width: 38px;
+    display: block;
+    border-radius: 100%;
+    i {
+      font-size: 14px;
+      line-height: 38px;
+    }
+  }
+
+  > li {
+    &.facebook {
+      a{
+        color: #3B5998;
+      }
+    }
+    &.twitter {
+      a{
+        color: #00aced;
+      }
+    }
+    &.gplus {
+      a{
+        color: #c53942;
+      }
+    }
+    &.pinterest {
+      a{
+        color: #ce222b;
+      }
+    }
+    &.reddit{
+      a{
+        color: orangered;
+      }
+    }
+  }
+}
+
+
+// 5.6. Post Navigation
+.post-navigation {
+  display: inline-block;
+  padding: 30px 20px;
+  background: $bg-secondary;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  span:hover, h3:hover {
+    color: $primary-color;
+  }
+  .previous-post, .next-post {
+    width: 50%;
+  }
+
+  h6{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  i {
+    margin: 0 5px;
+  }
+  span {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  .previous-post {
+    text-align: left;
+    float: left;
+    border-left: 0 none;
+    border-right: 0 none;
+    padding: 0 30px 0 0;
+    border-right: 1px solid #dedede;
+    span{
+      margin-right: 20px;
+    }
+  }
+  .next-post {
+    text-align: right;
+    float: left;
+    border-right: 0 none;
+    padding: 0 0 0 30px;
+    span{
+      margin-left: 20px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    margin: 8px 0 0;
+  }
+}
+
+// 5.7. Author Box
+.author-block {
+  padding: 25px 40px 55px 40px;
+  margin-bottom: 50px;
+  border-radius: 3px;
+  text-align: center;
+  background: $bg-secondary;
+  position: relative;
+  margin-top: 95px;
+}
+
+.author-thumb img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  margin-top: -70px;
+  margin-bottom: 25px;
+}
+
+.author-url a {
+  color: #1c1c1c;
+  font-size: 13px;
+}
+
+.author-content{
+  h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+    a{
+      color: $text-color;
+    }
+  }
+  
+  .author-counter{
+    margin: 10px 0;
+    span{
+      background: $text-color;
+      color: $white;
+      font-size: 12px;
+      font-family: $primary-font;
+      padding: 5px 10px;
+      border-radius: 2px;
+      a{
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.authors-social a {
+  color: $text-color;
+  margin-right: 10px;
+  i{
+    font-size: 16px;
+  }
+}
+
+// 5.8. Comment Styles
+.comments-block {
+  margin: 40px 0;
+}
+
+.all-comments {
+  .comment-content {
+    margin: 15px 0;
+  }
+  .comment-reply {
+    font-weight: 400;
+    color: #777;
+    font-size: 13px;
+    border: 1px solid #dadada;
+    padding: 5px 10px;
+    border-radius: 3px;
+    &:hover {
+      background: $primary-color;
+      color: $white;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.comments-counter {
+  font-size: 18px;
+  a {
+    color: #323232;
+  }
+}
+
+.all-comments {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  .comment {
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    &.last {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  img.commented-person {
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  .commented-person-name {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #303030;
+  }
+  .comment-hour {
+    color: #959595;
+    font-size:14px;
+  }
+}
+
+.comments-reply {
+  list-style: none;
+  margin: 0 0 0 70px;
+}
+
+.comment-form {
+  margin-bottom: 0;
+  .title-normal {
+    font-size: 22px;
+  }
+  .comments-btn {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+.newsletter-form{
+  .btn-primary{
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+
+
+.single-media{
+    img{
+      width: 50%;
+    }
+  }
+
+@include desktop{
+  .single-media{
+    img{
+      width: 50%;
+    }
+  }
+}
+
+@include desktop{
+  .media{
+    display: block;
+  }
+  .single-media{
+    img{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+

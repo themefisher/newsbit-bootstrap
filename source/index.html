@@ -1,0 +1,52 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm')
+
+<div class="py-30"></div>
+
+@@include('blocks/featured-slider.htm')
+
+<section class="block-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+				@@include('blocks/post-style-one.htm')
+				<div class="py-40"></div>
+				@@include('blocks/post-style-two.htm')
+				
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+				<div class="sidebar">
+					@@include('blocks/widget-social-share.htm')
+					@@include('blocks/widget-popular-post.htm')
+					@@include('blocks/widget-trending-posts.htm')
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/post-style-four.htm')
+
+
+<section class="section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+				@@include('blocks/all-posts.htm')
+				@@include('blocks/pagination.htm')				
+			</div>
+			<div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
+				<div class="sidebar sidebar-right">
+					@@include('blocks/widget-review.htm')
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="py-40"></div>
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')
