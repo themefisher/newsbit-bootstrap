@@ -1,11 +1,11 @@
 # Newsbit Free Bootstrap Magazine Template
 
-![newsbit](https://demo.themefisher.com/thumbnails/newsbit.png)
+![newsbit](https://assets.teamosis.com/thumbs/newsbit.png)
 
-👉🏻[View Live Preview](https://demo.themefisher.com/newsbit/)
+👉🏻[View Live Preview](https://newsbit-bootstrap.vercel.app/)
 
 <!-- download -->
-## Download And installation
+## Download and Installation
 
 Download this template from [Github](https://github.com/themefisher/newsbit/archive/main.zip)
 
